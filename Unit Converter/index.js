@@ -6,7 +6,7 @@ let convertBtn = document.getElementById("convert-btn")
 
 let input = valueBox.value
 
-convertBtn.addEventListener("click", function() {
+function converted() {
         convLength.innerHTML = 
         `${valueBox.value} meters = ${(valueBox.value * 3.281).toFixed(2)} feet | 
         ${valueBox.value} feet = ${(valueBox.value * 0.305).toFixed(2)} meters`
@@ -17,4 +17,4 @@ convertBtn.addEventListener("click", function() {
         convMass.innerHTML = 
         `${valueBox.value} kilos = ${(valueBox.value * 2.204).toFixed(2)} pounds | 
         ${valueBox.value} pounds = ${(valueBox.value * 0.454).toFixed(2)} kilos`
-})
+}
